@@ -1,0 +1,220 @@
+/* Reset styles to ensure consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px; /* Avoids overlap with fixed navbar */
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px; /* Provides adequate space around content */
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Keeps navbar on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-weight: bold;
+    font-size: 24px; /* Enhances visibility */
+    color: #333;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 30px; /* Ensures space between links */
+    font-size: 18px;
+    padding: 8px;
+}
+
+.nav-links a:hover {
+    color: #555;
+    border-bottom: 3px solid #0056b3;
+}
+
+/* Login container with centered form */
+.login-container {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    margin-top: 100px; /* Clears the fixed navbar */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Provides space below the heading */
+    color: #333;
+    font-size: 24px; /* Larger font size for headings */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Space below each label */
+    color: #666;
+    font-size: 16px; /* Readable text size for labels */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger button text for ease of reading */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+
+.post-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.post-container h2 {
+    margin-bottom: 20px;
+}
+
+.post-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-container label {
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: 500;
+}
+
+.post-container input[type="text"], .post-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-container button:hover {
+    background-color: #45a049;
+}
+
+.posts-container {
+    width: 100%;
+    max-width: 800px;
+    height: 90%;
+}
+.posts-container > :last-child {
+    margin-bottom: 85px; 
+}
+.post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;   
+}
+
+.post h3 {
+    margin: 0 0 10px;
+}
+
+.post p {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.post button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.post button:hover {
+    background-color: #0056b3;
+}
+
+.loading {
+    display: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
