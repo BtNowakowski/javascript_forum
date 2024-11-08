@@ -1,1 +1,1 @@
-#htmx_forum
+#js_forum
